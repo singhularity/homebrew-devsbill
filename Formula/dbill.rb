@@ -1,19 +1,19 @@
 class Dbill < Formula
   desc "Track cloud costs across all your providers"
   homepage "https://devsbill.com"
-  version "1.0.0"
+  version "0.4.5"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://devsbill.com/downloads/v1.0.0/dbill-darwin-arm64.tar.gz"
-      sha256 "dbfeda77fd4dc4110b90a328eea1d9f0b51f02157f0309a39e9f8b0575e3001a"
+      sha256 "1a74336211d17a4a7a815ed4c68ebea8c11a30a05b7a0db76ec9466c170f2952"
 
       def install
         bin.install "dbill-darwin-arm64" => "dbill"
       end
     else
       url "https://devsbill.com/downloads/v1.0.0/dbill-darwin-amd64.tar.gz"
-      sha256 "e0330b273676539e8ef0d8879514c7069bf56abd9e648ef6fc8250395743e312"
+      sha256 "9d34fdad2e23ae0bed91d299a4e1e7d7bcff0cd60b9757213c9716bdd31c13bb"
 
       def install
         bin.install "dbill-darwin-amd64" => "dbill"
